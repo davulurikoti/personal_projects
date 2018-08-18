@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KYC Verification Module</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Add KYC Employee Accounts (Operations can be performed only by owner of contract)</h1>
+  <br><label for="employee_address">Employee Address: </label><input type="text" id="employee_address" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="send1" onclick="App.addEmployee()">Add Employee</button>
+
+  <br>
+  <h4>Employee list</h4>
+  <span id="employee_list"></span>
+  <br><br>
+  <h1>KYC Accounts</h1>
+  <h4>Account list</h4>
+  <span id="account_list"></span>
+
+  <h4>Submit Account for Verification</h4>
+  <br><label for="address2">Account Address: </label><input type="text" id="address2" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="send2" onclick="App.submitAccount()">Send</button>
+
+  <h4>Start Processing Account</h4>
+  <br><label for="address3">Account Address: </label><input type="text" id="address3" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="send3" onclick="App.startProcessingAccount()">Send</button>
+
+  <h4>Verify Account</h4>
+  <br><label for="address4">Account Address: </label><input type="text" id="address4" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="send4" onclick="App.verifyAccount()">Send</button>
+
+  <h4>Reject Account</h4>
+  <br><label for="address5">Account Address: </label><input type="text" id="address5" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="send5" onclick="App.rejectAccount()">Send</button>
+
+  <br><br>
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+</html>
